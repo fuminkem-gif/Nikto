@@ -26,15 +26,23 @@ The objective of this lab is to perform web server vulnerability scanning using 
 
 . Create a file and add the IP addresses to be scanned:
 
+```bash
 nano ip_list.txt
+```
 
 . Add the following IP addresses inside the file:
 
+```
 10.6.6.14
+
 10.6.6.1
+
 10.6.6.13
+
 10.6.6.23
+
 172.17.0.2
+```
 
 . Save and exit (CTRL + X, then Y, then ENTER).
 
@@ -42,13 +50,17 @@ nano ip_list.txt
 
 Scan all IP addresses listed in the file:
 
+```bash
 nikto -h ip_list.txt
+```
 
 3️⃣ Run a Specific Scan and Generate an HTML Report
 
 Perform a focused scan and save the results as an HTML file:
 
+```bash
 nikto -h 172.17.0.2 -o scan_results.html
+```
 
 4️⃣ Locate and Open the Scan Results
 
